@@ -29,6 +29,7 @@ make items larger, wrap, and switch to align content*/
 
 .item3 {
   background-color: #3498db;
+  align-self: flex-end;
 }
 
 .item4 {
