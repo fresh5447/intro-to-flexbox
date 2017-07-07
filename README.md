@@ -80,17 +80,14 @@ justify-content: center
 
 
 ## Sizing with flex properties
+What proportion should I scale myself up or down when I have extra space?
 
-
-### Sizing with the flex property
-Note: Flex item!
-flex: 1; distribute evenly.
-Can tell box 2 to have double the space.
+width Of flex item is auto by default;
+flex 1 will tell them all to take up the exact same amount of space.
 
 flex: 1 is actually flex-grow; flex-shrink; and flex-basis
-too much space, not enough,
 
-flex-grow default is 0;
+
 
 ### Flex Container within flex container
 Build panels example. and show how to build a cool little footer for each example.
