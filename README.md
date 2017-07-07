@@ -24,6 +24,8 @@
 ### Display Flex
 In order to implement flex properties you need a `flex container` (parent) which will make all the immediate children `flex items`
 
+## Aligning and Centering
+
 
 #### justify-content: What to do with the main axis extra space?
 flex-end, flex-start, center, space-between, space-around
@@ -41,6 +43,9 @@ Update the height of the container to see this in action.
 
 
 
+#### align-self
+
+Can be applied to specifically one flex item.
 
 
 ### Flex direction (main and cross axis)
@@ -51,15 +56,7 @@ Update the height of the container to see this in action.
 
 
 
-
-
-
-#### align-self
-
-Can be applied to specifically one flex item.
-
-
-### Using Calc
+### Using Calc to implement a layout with Margin
 If we want our items to take up exactly 1/3rd of the screen, yet have a little margin. The problem is margin is not part of the box model - you become over budget.
 
 ```
@@ -69,24 +66,21 @@ If we want our items to take up exactly 1/3rd of the screen, yet have a little m
 
 
 
-### order: a flex-item property
+### order: Reorder flex-items
 How to reorder elements of the DOM. Works similar to z-index, default is 0;
+
+Give order rule to flex-item;
 
 
 ### Vertically center example
+
 flex-direction: column;
 min-height: 100vh;
 justify-content: center
 
-## Align items: Instead of working on main access; working on cross-access;
-Give container some height; stretch is the default; flex-start; baseline;
 
-## Align content: what do we do with the extra space when we have multiple rows? space between; space-around;
-align-content: center;
-justify-content: center;
+## Sizing with flex properties
 
-### Align self
-can apply to individual item
 
 ### Sizing with the flex property
 Note: Flex item!

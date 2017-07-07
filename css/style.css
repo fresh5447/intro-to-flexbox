@@ -1,26 +1,23 @@
-/*To show align-content:
-make items larger, wrap, and switch to align content*/
-
 .flex-container {
   display: flex;
   border: solid 10px #f1c40f;
-  /*flex-direction: row;*/
-  /*flex-wrap: wrap;*/
   height: 100vh;
-  align-items: center;
   justify-content: center;
   /*align-content: center;*/
-  /*justify-content: center;*/
+  flex-wrap: wrap;
+
 }
 
 .flex-item {
   font-size: 50px;
   text-align: center;
-  width: 220px;
+  margin: 10px;
+  width: calc(33.333% - 20px);
 }
 
 .item1 {
   background-color: #1abc9c;
+  order: 4;
 }
 
 .item2 {
@@ -29,7 +26,6 @@ make items larger, wrap, and switch to align content*/
 
 .item3 {
   background-color: #3498db;
-  align-self: flex-end;
 }
 
 .item4 {
