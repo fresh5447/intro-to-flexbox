@@ -1,12 +1,17 @@
-### Preliminary:
+### Project Setup:
 
-1) Clone repository:
-  - https://github.com/fresh5447/intro-to-flexbox.git
+1) Create a proeject that has:
+  `index.html`
+  `css/styles.css`
+  `README.md`
 
-2) `cd intro-to-flexbox `
+2) Ensure your `HTML` file is using the bootstrap boiler plate code, add content to your `README.md`
 
-3) User your tool of choice to run web project:
-  - Recommended: browser-sync  
+3) Run your project locally using brower-sync to ensure that is is working.
+
+`browser-sync start --server --files "*.html, css/*.css, js/*.js"`
+
+4) Create a repository at Github.com and push your code up.
 
 ### What is flexbox?
 
