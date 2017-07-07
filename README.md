@@ -14,29 +14,45 @@
 4) Create a repository at Github.com and push your code up.
 
 ### What is flexbox?
+ - Create responsive layouts without using margin, padding, and floats.
+ - Intelligently figures out what do to do with your layout, regardless of size and context.
 
-intelligently figures out what do to do with your layout, regardless of size and context;
+### Resources
+- [CSS Tricks](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+- [Flexbox Froggy](http://flexboxfroggy.com/)
 
-### flex containers & flex items
-Make the parent container a flex container by adding display: flex;
-All the direct children are now flex-items
+### Display Flex
+In order to implement flex properties you need a `flex container` (parent) which will make all the immediate children `flex items`
 
 
-### flex direction (main and cross axis)
-  - row / row-reverse
+### Flex direction (main and cross axis)
+  - row (default) / row-reverse
   - column / column-reverse
+
+
+#### justify-content: What to do with the main axis extra space?
+flex-end, flex-start, center, space-between, space-around
+
+
+
+#### align-items: What to do with the cross axis extra space?
+flex-end, flex-start, center, space-between, space-around
+
+
+
+
+
+
 
 ### Using Calc
 If we want our items to take up exactly 1/3rd of the screen, yet have a little margin.
 
-### justify-content: What to do with the main axis extra space?
-flex-end, flex-start, center, space-between, space-around
 
 ### order: a flex-item property
 How to reorder elements of the DOM. Works similar to z-index, default is 0;
 
 
-### vertically center example
+### Vertically center example
 flex-direction: column;
 min-height: 100vh;
 justify-content: center
@@ -65,8 +81,3 @@ flex-grow default is 0;
 Build panels example. and show how to build a cool little footer for each example.
 
 ----
-
-Additional Resources:
-
-https://css-tricks.com/snippets/css/a-guide-to-flexbox/
-http://flexboxfroggy.com/
