@@ -25,27 +25,48 @@
 In order to implement flex properties you need a `flex container` (parent) which will make all the immediate children `flex items`
 
 
-### Flex direction (main and cross axis)
-  - row (default) / row-reverse
-  - column / column-reverse
-
-
 #### justify-content: What to do with the main axis extra space?
 flex-end, flex-start, center, space-between, space-around
 
 
+#### align-content / align-items
 
-#### align-items: What to do with the cross axis extra space?
+how are items aligned on the cross axis (make sure you pay attention to the size of the container) (align-items is stretch by default) (base-line example - make fonts different size - items are based on bottom of font size)
+
 flex-end, flex-start, center, space-between, space-around
 
+align-content is for multiple lines;
+
+Update the height of the container to see this in action.
 
 
 
 
+
+### Flex direction (main and cross axis)
+  - row (default) / row-reverse
+  - column / column-reverse
+
+  Update the width of the flex-item, to see this in action.
+
+
+
+
+
+
+#### align-self
+
+Can be applied to specifically one flex item.
 
 
 ### Using Calc
-If we want our items to take up exactly 1/3rd of the screen, yet have a little margin.
+If we want our items to take up exactly 1/3rd of the screen, yet have a little margin. The problem is margin is not part of the box model - you become over budget.
+
+```
+  margin: 10px;
+  width: calc(33.333% - 20px)
+```
+
 
 
 ### order: a flex-item property

@@ -1,10 +1,22 @@
+/*To show align-content:
+make items larger, wrap, and switch to align content*/
+
 .flex-container {
+  display: flex;
   border: solid 10px #f1c40f;
+  /*flex-direction: row;*/
+  /*flex-wrap: wrap;*/
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  /*align-content: center;*/
+  /*justify-content: center;*/
 }
 
 .flex-item {
   font-size: 50px;
   text-align: center;
+  width: 220px;
 }
 
 .item1 {
